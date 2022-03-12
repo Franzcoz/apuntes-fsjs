@@ -16,11 +16,11 @@
 ---
 
 
-## Módulo 1
+## Modulo 1
 
 ...
 
-## Módulo 7
+## Modulo 7
 ## Acceso a Base de Datos con Node
 
 ### 
