@@ -4,21 +4,23 @@
 
 ## INDICE
 
-0. [AYUDA](#ayuda-formato)
-1. [Módulo 1](#modulo-1)
-2. [Módulo 2](#modulo-2)
-3. [Módulo 3](#modulo-3)
-4. [Módulo 4](#modulo-4)
-5. [Módulo 5](#modulo-5-bases-de-datos)
-6. [Módulo 6](#modulo-6)
-7. [Módulo 7](#modulo-7-acceso-a-base-de-datos-con-node)
-8. [Módulo 8](#modulo-8)
+0. [AYUDA](#---)
+1. [Módulo 1 - Fundamentos del Desarrollo de Páginas Web](#modulo-1)
+2. [Módulo 2 - Programación básica en Javascript](#modulo-2)
+- [Acceso al DOM](#acceso-al-dom)
+3. [Módulo 3 - Programación avanzada en Javascript](#modulo-3)
+4. [Módulo 4 - Desarrollo de Aplicaciones Web Frontend](#modulo-4)
+5. [Módulo 5 - Lenguaje de Consultas a una Base de Datos Postgres](#modulo-5)
+6. [Módulo 6 - Desarrollo de Backend en Node](#modulo-6)
+7. [Módulo 7 - Acceso a base de datos con Node](#modulo-7)
+8. [Módulo 8 - Framework Express](#modulo-8)
 
 
 ---
 
 
 ## Modulo 1
+## Fundamentos del Desarrollo de Páginas Web
 
 Aquí debería ir algún apunte del módulo 1.
 Procure seguir las ayudas para formatear el texto con títulos, subtítulos, enlaces, etc.
@@ -27,14 +29,54 @@ Procure seguir las ayudas para formatear el texto con títulos, subtítulos, enl
 
 
 ## Modulo 2
+## Programación básica en Javascript
 
-Aquí debería ir algún apunte del módulo 2.
-Procure seguir las ayudas para formatear el texto con títulos, subtítulos, enlaces, etc.
+### Acceso al DOM
+
+En Javascript se puede acceder a elementos existentes en el documento HTML, almacenarlos en variables (const o let), obtener sus atributos y cambiarlos.
+
+Esto se hace a través del DOM (Modelo del Objeto Documento), que es una interfaz definida para representar e interactuar con el documento HTML. Así, hay ciertas funciones o métodos definidos en Javascript que nos permiten hacer esto.
+
+Uno de los objetos más importantes es el objeto documento, que representa al documento HTML completo. Con diversos métodos o funciones se pueden extraer porciones más acotadas y específicas a partir de document.
+
+Ejemplos:
+
+
+```
+
+index.html --------------------------
+
+...
+<body>
+    <div id="formulario">
+        <div class="name"></div>
+        <div class="email"></div>
+        <div class="password"></div>
+        <div class="resultado"></div>
+    </div>
+</body>
+...
+
+script.js ---------------------------
+
+let formu = document.querySelector('#formulario');
+let nam = document.querySelector('.name');
+let email = document.querySelector('.email');
+let pwd = document.querySelector('.password');
+let resul = document.querySelector('.resultado');
+
+
+```
+
+En el ejemplo anterior se aprecia el uso del método querySelector, perteneciente al objeto document. Este método recibe como parámetro un string conteniendo un identificador en la misma notación que CSS, un # para referirse a un id y un . para referirse a una clase. Para seleccionar un tag (como div, body ...) no se debe anteceder nada ('div', 'img', 'p').
+
+Al consultar en la consola del navegador por el valor de las variables almacenadas, nos devolverá la estructura html que le corresponde, o sea, el nivel que se seleccionó y sus hijas.
 
 ---
 
 
 ## Modulo 3
+## Programación avanzada en Javascript
 
 Aquí debería ir algún apunte del módulo 3.
 Procure seguir las ayudas para formatear el texto con títulos, subtítulos, enlaces, etc.
@@ -43,6 +85,7 @@ Procure seguir las ayudas para formatear el texto con títulos, subtítulos, enl
 
 
 ## Modulo 4
+## Desarrollo de Aplicaciones Web Frontend
 
 Aquí debería ir algún apunte del módulo 4.
 Procure seguir las ayudas para formatear el texto con títulos, subtítulos, enlaces, etc.
@@ -50,7 +93,8 @@ Procure seguir las ayudas para formatear el texto con títulos, subtítulos, enl
 ---
 
 
-## Modulo 5 Bases de Datos
+## Modulo 5
+## Lenguaje de Consultas a una Base de Datos Postgres
 
 Aquí debería ir algún apunte del módulo 5.
 Procure seguir las ayudas para formatear el texto con títulos, subtítulos, enlaces, etc.
@@ -76,6 +120,7 @@ Lo que va antes y después de los paréntesis es la segunda consulta. En este ca
 
 
 ## Modulo 6
+## Desarrollo de Backend en Node
 
 Aquí debería ir algún apunte del módulo 6.
 Procure seguir las ayudas para formatear el texto con títulos, subtítulos, enlaces, etc.
@@ -83,7 +128,8 @@ Procure seguir las ayudas para formatear el texto con títulos, subtítulos, enl
 ---
 
 
-## Modulo 7 Acceso a Base de Datos con Node
+## Modulo 7
+## Acceso a Base de Datos con Node
 
 Aquí debería ir algún apunte del módulo 7.
 Procure seguir las ayudas para formatear el texto con títulos, subtítulos, enlaces, etc.
@@ -92,6 +138,7 @@ Procure seguir las ayudas para formatear el texto con títulos, subtítulos, enl
 
 
 ## Modulo 8
+## Framework Express
 
 Aquí debería ir algún apunte del módulo 8.
 Procure seguir las ayudas para formatear el texto con títulos, subtítulos, enlaces, etc.
@@ -99,8 +146,8 @@ Procure seguir las ayudas para formatear el texto con títulos, subtítulos, enl
 ---
 
 
-
-## Ayuda Formato
+## - -
+## Ayuda: Cómo escribo en este documento de tipo Markdown?
 
 
 Los títulos (como el de arriba que dice "Módulo 1") se escriben con "#" en el comienzo de la línea seguido de un espacio y el título. La cantidad de "#" definen el nivel del título, en este caso 1 "#" se usó para el título del documento y 2 "#"s para el título de cada módulo.
